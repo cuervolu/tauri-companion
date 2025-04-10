@@ -1,15 +1,15 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.cuervolu.tauricompanion</id>
-    <name>tauri-companion</name>
+    <id>dev.cuervolu.tauricompanion</id>
+    <name>Tauri Companion</name>
     <vendor>cuervolu</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.TauriBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.cuervolu.tauricompanion.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.cuervolu.tauricompanion.startup.MyProjectActivity" />
+        <toolWindow factoryClass="dev.cuervolu.tauricompanion.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <postStartupActivity implementation="dev.cuervolu.tauricompanion.startup.MyProjectActivity" />
     </extensions>
 </idea-plugin>
